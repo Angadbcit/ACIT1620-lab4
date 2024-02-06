@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Transitions and Variables</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div>
-        <header>
+        <header class="heading">
             <h1>CSS Transitions and Variables</h1>
         </header>
         <div>
             <aside>
-                <nav>
+                <nav class="menubar">
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -22,34 +22,34 @@
                     </ul>
                 </nav>
             </aside>
-            <main>
-                <h2>CSS Transitions</h2>
-                <p>CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.</p>
-                <p>To create a transition effect, you must specify two things:
-                    <ul>
-                        <li>the CSS property you want to add an effect to</li>
-                        <li>the duration of the effect</li>
-                    </ul>
-                </p>
-                <p>You can specify speed curves, delay effects, combine transformations, and many more things.</p>
-                <p>CSS transitions have properties:
-                    <ul>
-                        <li>Transition: A shorthand property for setting the four transition properties into a single property</li>
-                        <li>transition-delay: Specifies a delay (in seconds) for the transition effect</li>
-                        <li>transition-duration: Specifies how many seconds or milliseconds a transition effect takes to complete</li>
-                        <li>transition-property: Specifies the name of the CSS property the transition effect is for</li>
-                        <li>Transition-timing-function: Specifies the speed curve of the transition effect</li>
-                    </ul>
-                </p>
-            </main>
-            <main>
+            <main class="para">
+                <div>
+                    <h2>CSS Transitions</h2>
+                    <p>CSS transitions provide a way to control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time.</p>
+                    <p>To create a transition effect, you must specify two things:
+                        <ul>
+                            <li>the CSS property you want to add an effect to</li>
+                            <li>the duration of the effect</li>
+                        </ul>
+                    <p>You can specify speed curves, delay effects, combine transformations, and many more things.</p>
+                    <p>CSS transitions have properties:
+                        <ul>
+                            <li>Transition: A shorthand property for setting the four transition properties into a single property</li>
+                            <li>transition-delay: Specifies a delay (in seconds) for the transition effect</li>
+                            <li>transition-duration: Specifies how many seconds or milliseconds a transition effect takes to complete</li>
+                            <li>transition-property: Specifies the name of the CSS property the transition effect is for</li>
+                            <li>Transition-timing-function: Specifies the speed curve of the transition effect</li>
+                        </ul>
+                </div>
+                <div>
                 <h2>CSS Variables</h2>
                 <p>CSS variable are entities defined by CSS authors that represent specific values to be reused throughout a document.</p>
                 <p>The var() function is used to insert the value of a CSS variable.</p>
                 <p>CSS variables have access to the DOM, which means that you can create variables with local or global scope, change the variables with JavaScript, and change the variables based on media queries.</p>
                 <p>A good way to use CSS variables is when it comes to the colors of your design. Instead of copy and paste the same colors over and over again, you can place them in variables.</p>
-            </main>
-        </div>
+                </div>
+        </main>
+    </div>
         <footer>
             <h5>Citation</h5>
             <p>https://www.w3schools.com/css/css3_transitions.asp</p>

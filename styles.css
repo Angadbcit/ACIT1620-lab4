@@ -3,27 +3,73 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+} 
+
+:root {
+    --color1: midnightblue;
+    --color2: skyblue;
+    --color3: yellow;
 }
 
-form {
-    border: 1px solid #ccc;
-    padding: 1rem;
+.heading {
+    background-color: var(--color1);
+    text-align: center;
+    color: var(--color3);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-input,
-textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 1rem;
+.menubar {
+    display: flex;
+    color: var(--color2);
+    margin: 0px;
+    padding: 0px;
 }
 
-form button {
-    display: block;
-    padding: 0.5rem 1rem;
-    background: midnightblue;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    width: 5rem;
-    margin-left: auto;
+.menubar li {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 3px  rgb(143, 141, 141);
+    transition: box-shadow 1s ease, background-color 1s ease,  padding-top 1s ease, padding-right 1s ease, padding-left 1s ease, padding-bottom 1s ease, font-size 1s ease;
+}
+
+.menubar a {
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.menubar a:hover {
+    color: var(--color3);
+}
+
+.menubar li:hover {
+    box-shadow: 0px 9px 9px  rgb(111, 113, 113);
+    padding-top: 17px;
+    padding-right: 17px;
+    padding-left: 15px;
+    padding-bottom: 13px;
+    font-size: large;
+    background-color: var(--color1);
+}
+
+h2 {
+    color: var(--color2);
+}
+
+.para {
+    margin-left: 40px;
+    transition: background-color 1s ease, color 1s ease, padding 1s ease;
+}
+
+.para :hover {
+    background-color: var(--color1);
+    color: azure;
+    padding: 25px;
+}
+
+footer {
+    margin-top: 150px;
+    border-top: black solid 1px;
+    text-align: center;
 }
